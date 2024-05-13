@@ -29,4 +29,3 @@ server:
   port: 8500
   #port: 8600
   #port: 8700
-eureka.
