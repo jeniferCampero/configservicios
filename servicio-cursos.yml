@@ -1,15 +1,15 @@
 spring:
+datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cursos?serverTimezone=UTC
+    username: root
+    password: root
  jpa:
   database-platform: org.hibernate.dialect.MySQLDialect
   hibernate:
    naming: 
     implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
     physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
- datasource:
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql://localhost:3306/cursos?serverTimezone=UTC
-  username: root
-  password: root
   
 springdoc:
  packagesToScan: com.curso.controller
