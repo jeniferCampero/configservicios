@@ -1,0 +1,6 @@
+server:
+ port: 8600
+springdoc:
+ packagesToScan: com.curso.controller
+ pathsToMatch: /**
+ swagger-ui.path: /swagger-ui.html
