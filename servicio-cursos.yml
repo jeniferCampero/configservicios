@@ -11,9 +11,22 @@ spring:
   username: root
   password: root
   
-server:
- port: 8500
 springdoc:
  packagesToScan: com.curso.controller
  pathsToMatch: /**
  swagger-ui.path: /swagger-ui.html
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    #register-with-eureka: false  
+  instance:
+   instance-id: instancia1
+   #instance-id: instancia2
+   #instance-id: instancia3
+server:
+  port: 8500
+  #port: 8600
+  #port: 8700
+eureka.
